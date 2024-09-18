@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Love</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f2e9ff;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            color: #844ac9;
+            background-image: url('https://i.imgur.com/LPbl5ys.png'); /* Soft rose design background */
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            position: relative;
+            animation: backgroundFade 10s ease-in-out infinite;
+            
+        }
+
+        @keyframes backgroundFade {
+            0% { background-color: #f2e9ff; }
+            50% { background-color: #ffe6ff; }
+            100% { background-color: #f2e9ff; }
+        }
+
+        header {
+            background-color: #d8b9f2;
+            padding: 20px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            animation: headerBounce 2s ease infinite;
+        }
+
+        @keyframes headerBounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+            color: #9b59b6;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .content {
+            margin: 20px auto;
+            max-width: 700px;
+            padding: 20px;
+            background: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+            z-index: 50;
+            animation: fadeIn 2s ease;
+        }
+
+        .content p {
+            font-size: 1.5em;
+            line-height: 1.6em;
+            animation: pulseText 3s ease-in-out infinite;
+        }
+
+        @keyframes pulseText {
+            0% { color: #844ac9; }
+            50% { color: #ff6f91; }
+            100% { color: #844ac9; }
+        }
+
+        .messages p {
+            background: #e9d9ff;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            font-style: italic;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .messages p:hover {
+            transform: scale(1.1);
+            background-color: #ffe6ff;
+        }
+
+        .cat-images img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+            transition: transform 0.3s ease;
+        }
+
+        .buttons {
+            margin: 40px 0;
+            position: relative;
+        }
+
+        .buttons a {
+            background-color: #b487eb;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-size: 1.2em;
+            margin: 10px;
+            display: inline-block;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .buttons a:hover {
+            background-color: #a065e8;
+            transform: translateY(-3px);
+        }
+
+        footer {
+            margin: 30px 0;
+            padding: 20px;
+            font-size: 1.2em;
+            background-color: #d8b9f2;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        footer::after {
+            content: "From Darrelle ❤️";
+            display: block;
+            font-size: 1.5em;
+            color: #ff6f91;
+            margin-top: 15px;
+            font-weight: bold;
+            animation: glowText 2s ease infinite;
+        }
+
+        @keyframes glowText {
+            0% { text-shadow: 0 0 5px #ff6f91; }
+            50% { text-shadow: 0 0 20px #ff6f91, 0 0 30px #ff6f91; }
+            100% { text-shadow: 0 0 5px #ff6f91; }
+        }
+
+        /* Floating heart effect */
+        .floating-heart {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: url('Eo_circle_deep-purple_heart.png') no-repeat center;
+    background-size: contain;
+    animation: floatUp 4s ease-in-out infinite;
+    pointer-events: none; /* Prevent clicks on the heart */
+}
+
+@keyframes floatUp {
+    0% {
+        transform: scale(0.5) translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.5) translateY(-200px);
+        opacity: 0;
+    }
+}
+
+
+        .music-player {
+    position: fixed;
+    bottom: 15px;
+    left: 15px;
+    display: flex;
+    align-items: center;
+    background-color: #b487eb;
+    padding: 10px 15px;
+    border-radius: 15px;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 200;
+}
+
+.music-player img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.music-player audio {
+    width: 250px;
+    border-radius: 10px;
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hello, Gorgeous hehehe😚😚😚</h1>
+    </header>
+
+    <!-- Floating hearts when clicking -->
+    <div class="heart-container"></div>
+
+    <div class="content" id="tab1">
+        <p>Hi Gandaaa!!!</p>
+        <p>Just wanted to remind you how much I miss you and love you po. I wanna kiss u so bad kasi I miss you and our baby.</p>
+
+        <div class="messages">
+            <p>Potek I miss you na umay😡😡😡</p>
+            <p>UWII KA NA NGAAAA</p>
+            <p>SUNTUKAM NALANG WALANG KISS EEE</p>
+        </div>
+
+        <div class="cat-images">
+            <h2>LOOOK AT OUR BABYYY I MISS YOU BOTH:(((</h2>
+            <img src="27e5efcd-d96b-4b76-962c-b9bf8fec449f.jpg" alt="Cute cats together">
+        </div>
+
+        <div class="buttons"</div>
+            <a href="#tab2" onclick="showTab('tab2')">CLICK MEEE</a>
+            <a href="#tab3" onclick="showTab('tab3')">ME ME ME CLICK PLSSS</a>
+        </div>
+    </div>
+
+    <!-- Tab 2 -->
+    <div class="content tab-content" id="tab2">
+        <p>Hey cutie puffball!,</p>
+        <p>I just want to apologize po for being hard to deal with sometimes and thank you for staying even though I'm so hard to be with. I love you more than anything po</p>
+
+        <div class="messages">
+            <p>I'm sorry🥹🥹</p>
+            <p>I'll be better promisee</p>
+            <p>Thanks for everything</p>
+        </div>
+
+        <div class="buttons">
+            <a href="#tab1" onclick="showTab('tab1')">yoko na balik moko kay mmeow</a>
+            <a href="#tab3" onclick="showTab('tab3')">DI AKO KINLICK IM  GONNA CRY HUHUHU</a>
+        </div>
+    </div>
+
+    <!-- Tab 3 -->
+    <div class="content tab-content" id="tab3">
+        <p>For you, my Smol Baby,</p>
+        <p>I just want to say na I appreciate everything that you do to me and your patience. Thank you for giving me your trust even though it’s hard. I won't waste it po, I promise.</p>
+
+        <div class="messages">
+            <p>All yours hehehehe🫶🫶🫶</p>
+            <p>You're mine too😈😈😈</p>
+        </div>
+
+        <div class="buttons">
+            <a href="#tab1" onclick="showTab('tab1')">yoko na where si mmeowww</a>
+            <a href="#tab2" onclick="showTab('tab2')">aww di ako kinlick</a>
+        </div>
+    </div>
+
+    <!-- Music player at the bottom -->
+    <div class="music-player">
+        <!-- Replace the src attribute with your image URL -->
+        <img src="27e5efcd-d96b-4b76-962c-b9bf8fec449f.jpg" alt="Music Player Image">
+        <audio controls>
+            <source src="blue.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+    
+
+    <footer>
+        I love you so so so so muchh 💜
+    </footer>
+
+    <script>
+        // Function to show and hide tabs
+        function showTab(tabId) {
+            const contents = document.querySelectorAll('.content');
+            contents.forEach(content => content.style.display = 'none');
+            document.getElementById(tabId).style.display = 'block';
+        }
+
+        // Show the first tab by default
+        showTab('tab1');
+
+        // Heart click event to show floating hearts
+        document.body.addEventListener('click', function(event) {
+            const heart = document.createElement('div');
+            heart.classList.add('floating-heart');
+            heart.style.left = event.clientX - 25 + 'px';
+            heart.style.top = event.clientY - 25 + 'px';
+            document.body.appendChild(heart);
+            
+        setTimeout(() => heart.remove(), 4000); // Remove heart after animation
+        });
+
+    </script>
+</body>
+</html>
+
